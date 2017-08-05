@@ -243,11 +243,6 @@ char read_char(void)
 
 void setMainLoop() {
 
-
-
-
-  ///-----
-
   while (!done) {
     auto lastKey = bioskey(0x11);
     auto extendedKeys = bioskey(0x12);
@@ -302,13 +297,13 @@ void setMainLoop() {
       moveDown();
       break;
     case 'a':
-      //    case 19424:
+    case 19424:
     case 4209: //q
       //left
       rotateCameraLeft();
       break;
     case 'd':
-      //    case 19936:
+    case 19936:
     case 4709: //e
       //right
       rotateCameraRight();
@@ -336,9 +331,6 @@ void setMainLoop() {
     case 8550: //f
       dropItem();
       break;
-    default:
-      std::cout << "what?! " << lastKey << std::endl;
-      exit(0);
     }
     tick(); 
   }
