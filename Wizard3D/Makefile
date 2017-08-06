@@ -54,7 +54,6 @@ OBJS = DOS-version/main.o \
         ../gles2-renderer/TrigBatch.o \
         ../gles2-renderer/VBORenderingJob.o \
         ../gles2-renderer/NativeBitmap.o \
-	../nanovg/src/nanovg.o \
         ../NullSoundSystem/SoundClip.o \
         ../NullSoundSystem/SoundEmitter.o \
         ../NullSoundSystem/SoundListener.o \
